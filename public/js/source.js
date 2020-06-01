@@ -15,7 +15,7 @@ weatherForm.addEventListener('submit', (e) => {
                 messageOne.textContent = data.error
             } else {
                 messageOne.textContent = data.forecast.Location
-                messageTwo.textContent = `${data.forecast.Forecast} with a temperature of ${data.forecast.Temperature}`
+                messageTwo.textContent = `${data.forecast.Forecast} with ${data.forecast.Humidity} humidity, and a temperature of ${data.forecast.Temperature} but feels like ${data.forecast.Feelslike}`
             }
         })
     })

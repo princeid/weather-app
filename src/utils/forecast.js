@@ -17,7 +17,9 @@ const forecast = (latitude, longitude, callback) => {
                 // Location: `${response.body.location.region}, ${response.body.location.name}, ${response.body.location.country}`,
                 Location: `${body.location.region}, ${body.location.name}, ${body.location.country}`,
                 Temperature: `${body.current.temperature}°C`,
-                Forecast: `${body.current.weather_descriptions[0]}`
+                Forecast: `${body.current.weather_descriptions[0]}`,
+                Feelslike: `${body.current.feelslike}°C`,
+                Humidity: `${body.current.humidity}%`
             })
         }
     })
